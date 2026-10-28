@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Open Graph / 카카오톡 / 페이스북 / 디스코드 공유용 메타태그 -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://muuuuuss.github.io/clubActivity/%EB%B6%80%ED%99%9C%EB%8F%99.html">
+<meta property="og:title" content="부활동 | 테일즈런너 길드원 모집">
+<meta property="og:description" content="같이 달리고, 같이 떠드는 동아리! 길드 Lv.16 | 디코 필참 | 주 2회 길퀘">
+<meta property="og:image" content="https://muuuuuss.github.io/clubActivity/Thumbnail.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<title>부활동 | 테일즈런너 길드원 모집</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --page:#e7ddfb; --ink:#3b2b66; --sub:#6a5a99;
+  --board:#2f5d4f; --chalk:#f7f4e8; --dim:#cfe0d3;
+  --yellow:#ffe98a; --pink:#ffb6d3; --blue:#a8defa; --mint:#bdf0d8; --lav:#d9c3fa;
+  --wood:#c08a4d; --wood2:#9a6a33; --paper:#fffaea; --pen:#4a3a9a; --line:#e1d6b3;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--page:#2a2247;--ink:#f1ebff;--sub:#bfb2e6}}
+:root[data-theme="dark"]{color-scheme:dark;--page:#2a2247;--ink:#f1ebff;--sub:#bfb2e6}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:"Jua",system-ui,sans-serif;font-weight:400;line-height:1.7;word-break:keep-all;font-size:1.05rem}
+h1,h2,h3,b,strong,th,dt,button,input,select,textarea{font-weight:400;font-family:inherit}
+h1,h2,h3{line-height:1.15;margin:0}
+:focus-visible,.slot:focus-within{outline:3px solid #ff8fc0;outline-offset:3px}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+section{padding:40px 0}
+h2{font-size:clamp(1.9rem,5vw,2.5rem);margin-bottom:6px}
+.lead{color:var(--sub);margin:0 0 22px;max-width:56ch}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.w{display:inline-block;white-space:nowrap}.ch{display:inline-block}
+
+/* doodles */
+.dd{width:1.35em;height:1.35em;vertical-align:-.3em;margin:0 4px;stroke:var(--st,#f7f4e8);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;fill:none;overflow:visible}
+.book .dd,.pola .dd,h2 .dd,footer .dd{--st:#2a2236}
+
+/* chalkboard */
+.board{position:relative;border:12px solid var(--wood);border-bottom-color:var(--wood2);border-radius:14px;background:var(--board);background-image:radial-gradient(ellipse at 25% 15%,rgba(255,255,255,.1),transparent 60%);color:var(--chalk);padding:24px 24px;box-shadow:inset 0 0 36px rgba(0,0,0,.25),0 6px 0 rgba(120,90,160,.25)}
+.board h3{color:var(--yellow);font-size:1.7rem;margin-bottom:6px}
+
+/* hero */
+.hero{padding:26px 0 36px}
+.hero .board{text-align:center;padding:34px 18px 32px}
+.small{font-size:1.2rem;color:var(--blue);margin:0}
+.titlerow{display:flex;justify-content:center;align-items:center;gap:6px}
+.titlerow .dd{width:clamp(48px,12vw,84px);height:clamp(48px,12vw,84px)}
+.hero h1{font-size:clamp(4rem,17vw,7.6rem);color:var(--lav);-webkit-text-stroke:10px #16121f;paint-order:stroke fill;letter-spacing:.04em}
+.hero .sub{font-size:clamp(1.2rem,4vw,1.6rem);margin:2px 0 18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 24px;padding:0;list-style:none}
+.tags li{border:2px solid var(--chalk);border-radius:999px;padding:0 16px}
+.btn-group{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:10px}
+.btn{display:inline-block;background:var(--yellow);color:#4a3a00;font-size:1.2rem;padding:4px 28px;border-radius:999px 20px 999px 24px;border:3px solid #16121f;text-decoration:none;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.3);line-height:1.5}
+.btn:hover{transform:translateY(-1px) rotate(-1deg)}
+.btn.line{background:transparent;color:var(--chalk);border:2px dashed var(--chalk);box-shadow:none;margin-left:0}
+
+/* info + notes */
+.info{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:0}
+.info div{border:2px dashed rgba(247,244,232,.6);border-radius:16px;padding:8px 16px}
+.info div:nth-child(odd){transform:rotate(-.6deg)}.info div:nth-child(even){transform:rotate(.7deg)}
+.info dt{font-size:1.2rem;color:var(--blue)}
+.info dd{margin:0}
+.info dd small{display:block;color:var(--dim);font-size:.9rem}
+.note p{margin:0 0 10px;padding-bottom:6px;border-bottom:2px dashed rgba(247,244,232,.35)}
+.note p:last-child{border:0;margin:0;padding:0}
+.note .k{color:var(--yellow)}
+.cb{display:inline-block;width:1.1em;height:1.1em;border:2.5px solid var(--chalk);border-radius:4px;vertical-align:-.15em;margin:0 6px 0 10px;transform:rotate(-4deg)}
+
+/* rules */
+.rules{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.box{border:2px solid var(--chalk);border-radius:18px;padding:12px 20px 16px}
+.box ul{margin:0;padding:0;list-style:none;display:grid;gap:2px}
+.box li{padding-left:24px;position:relative}
+.box li::before{position:absolute;left:2px}
+.good li::before{content:"•";color:var(--yellow)}
+.bad h3{color:var(--pink)}.bad li::before{content:"•";color:var(--pink)}
+.must{margin-top:16px;padding:12px 20px;border:2px dashed var(--pink);border-radius:18px}
+.must b{font-size:1.3rem;color:var(--pink)}
+.must ul{margin:4px 0 0;padding-left:20px}
+
+/* attendance book */
+.book{background:var(--paper);color:#3a2f1c;border-radius:10px 20px 20px 10px;border-left:20px solid #8b6bd6;box-shadow:6px 8px 0 rgba(120,90,160,.3);padding:20px 18px 24px}
+.book h3{font-size:2rem;border-bottom:3px double #3a2f1c;padding-bottom:2px;margin-bottom:4px}
+.meta{display:flex;justify-content:space-between;flex-wrap:wrap;color:#7a6c48;margin-bottom:12px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
+.stu{background:#fff;border:2px solid var(--line);border-radius:14px;padding:8px 8px 10px;text-align:center;position:relative}
+.stu:nth-child(3n+1){transform:rotate(-.8deg)}.stu:nth-child(3n){transform:rotate(.8deg)}
+.no{position:absolute;left:10px;top:8px;z-index:2;background:#fff;border-radius:999px;min-width:26px;padding:0 6px;font-size:.9rem;color:#7a6c48;border:1px solid var(--line)}
+.slot{display:grid;place-items:center;position:relative;overflow:hidden;background:#faf4dc;border:2px dashed #d3c48f;border-radius:10px;color:#a8996a;text-align:center;cursor:default}
+.slot.p{aspect-ratio:3/4}.slot.g{aspect-ratio:4/3;border-radius:4px;cursor:pointer}
+.slot.permanent-locked{cursor:default;background:#f2ebcd;}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:4px}
+.nm{margin-top:6px;border-bottom:2px solid var(--line);color:var(--pen);font-size:1.15rem;min-height:1.9rem}
+.nm.ph{color:#b7aa80}
+.chip{display:inline-block;margin-top:4px;padding:0 12px;border-radius:999px;color:#3a2f1c}
+.r0{background:var(--yellow)}.r1{background:var(--pink)}.r2{background:var(--mint)}
+.stamp{position:absolute;right:8px;top:8px;z-index:2;width:28px;height:28px;border:2px solid #e0453c;border-radius:50%;color:#e0453c;display:grid;place-items:center;font-size:.85rem;transform:rotate(-12deg);background:rgba(255,255,255,.7)}
+
+/* form */
+.form{display:grid;gap:12px;max-width:660px}
+.row2{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+label.f{display:grid;gap:2px;font-size:1.15rem;color:var(--blue)}
+label.f small{color:var(--dim);font-size:.85rem}
+input[type=text],select,textarea{font:inherit;font-size:1rem;padding:8px 12px;border-radius:12px;border:2px solid rgba(247,244,232,.55);background:rgba(0,0,0,.22);color:var(--chalk);width:100%}
+select option{color:#222}
+textarea{min-height:96px;resize:vertical}
+#out{display:none;gap:10px}#out.show{display:grid}
+#msg{margin:0;min-height:1.4em;color:var(--yellow)}
+
+/* gallery */
+.album{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.pola{background:#fff;padding:10px 10px 12px;border-radius:6px;box-shadow:4px 6px 0 rgba(120,90,160,.28);color:#3a2f1c}
+.pola:nth-child(odd){transform:rotate(-1.8deg)}.pola:nth-child(even){transform:rotate(1.4deg)}
+
+/* 이미지 확대 모달(팝업) 스타일 */
+#imgModal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:9999;justify-content:center;align-items:center;padding:20px}
+#imgModal.show{display:flex}
+#imgModal img{max-width:90%;max-height:90%;object-fit:contain;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
+.modal-close{position:absolute;top:15px;right:25px;background:none;border:none;color:#fff;font-size:3rem;cursor:pointer;font-family:sans-serif;line-height:1;padding:0;transition:color 0.2s}
+.modal-close:hover{color:#5f5d5e}
+
+footer{padding:20px 20px 40px;text-align:center;color:var(--sub)}
+footer p{margin:2px 0}
+.cn{position:absolute;bottom:12px;max-width:46%;font-size:.95rem;line-height:1.35;color:rgba(247,244,232,.78);pointer-events:none;transform:rotate(-3deg);text-align:left}
+.cn.r{right:18px;left:auto;text-align:right;transform:rotate(2.5deg)}.cn.l{left:18px}
+.cn b{color:#fff6c2}
+.board.has-cn{padding-bottom:92px}
+@media(max-width:520px){.cn{font-size:.82rem;max-width:48%}} 
+.say{margin-top:6px;font-size:.9rem;line-height:1.35;color:#6a5a99}
+.say.ph{color:#b7aa80}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="cat" viewBox="0 0 48 44"><path style="fill:var(--f,#ffb6d3)" d="M7 20L9 5L18 11Q24 9 30 11L39 5L41 20Q43 38 24 39Q5 38 7 20Z"/><path d="M15 22q2 2 4 0M22 28q2 2 4 0M1 24h7M40 24h7"/></symbol>
+<symbol id="ghost" viewBox="0 0 40 44"><path style="fill:var(--f,#a8defa)" d="M6 40V20Q6 4 20 4Q34 4 34 20V40L28 35L22 40L16 35L10 40Z"/><path d="M14 20h.1M26 20h.1M17 27q3 3 6 0"/></symbol>
+<symbol id="heart" viewBox="0 0 40 40"><path style="fill:var(--f,#ffb6d3)" d="M20 35C2 22 6 6 20 14C34 6 38 22 20 35Z"/></symbol>
+<symbol id="star" viewBox="0 0 40 40"><path style="fill:var(--f,#ffe98a)" d="M20 3L25 15L38 16L28 25L31 38L20 31L9 38L12 25L2 16L15 15Z"/></symbol>
+<symbol id="thumb" viewBox="0 0 40 40"><path style="fill:var(--f,#cdf5b8)" d="M6 36V18H13L18 5Q25 4 24 13L23 17H34Q38 18 36 24L34 32Q33 36 28 36Z"/></symbol>
+<symbol id="bird" viewBox="0 0 60 34"><path style="fill:var(--f,#9aa0aa)" d="M6 19Q12 7 30 11Q46 13 57 22Q42 32 24 30Q11 29 6 19Z"/><path d="M6 19L1 22L7 24M13 17h.1"/></symbol>
+</defs></svg>
+
+<header class="hero"><div class="wrap"><div class="board has-cn">
+  <p class="small" data-a="1">테일즈런너 길드원 모집</p>
+  <div class="titlerow">
+    <svg class="dd" style="--f:#ffb6d3"><use href="#cat"/></svg>
+    <h1 aria-label="부활동"><span>부</span><span>활</span><span>동</span></h1>
+    <svg class="dd" style="--f:#ffd23f;transform:scaleX(-1)"><use href="#cat"/></svg>
+  </div>
+  <p class="sub">같이 달리고, 같이 떠드는 동아리</p>
+  <ul class="tags"><li>길드 Lv.16</li><li>14명 활동 중</li><li>디코 필참</li><li>주 2회 길퀘</li></ul>
+  
+  <!-- 버튼 4개 -->
+  <div class="btn-group">
+    <a class="btn" href="#apply">가입 신청하기</a>
+    <a class="btn line" href="#roll">길드원 출석부</a>
+    <a class="btn line" href="싸이월드 미니홈피.html">싸이월드</a>
+    <!-- <a class="btn line" href="부활동 신입생.html">신입생</a> -->
+  </div>
+
+  <span class="cn l"><b>떠든 사람</b> : 쁘까, 한촌</span>
+</div></div></header>
+
+<main>
+<!-- 활동 사진 섹션 -->
+<section id="album"><div class="wrap">
+  <h2>우리 활동 사진 <svg class="dd" style="--f:#ffe98a"><use href="#star"/></svg></h2>
+  <p class="lead">같이 달리고 같이 웃었던 순간들이에요.</p>
+  <div class="album" id="alb"></div>
+</div></section>
+
+<section id="info"><div class="wrap">
+  <h2>길드 정보 <svg class="dd" style="--f:#ffe98a"><use href="#star"/></svg></h2>
+  <p class="lead">테런이 메인이지만 가끔 다른 게임도 같이 즐기는 길드예요.</p>
+  <div class="board has-cn"><dl class="info">
+    <div><dt>길드 레벨</dt><dd>16 <svg class="dd"><use href="#thumb"/></svg></dd></div>
+    <div><dt>인원</dt><dd>14명<small>반장 1 · 부반장 2 · 길드원 11</small></dd></div>
+    <div><dt>나이 / 성별</dt><dd>06년생 이상 / 상관 없음<small>남성은 군필</small></dd></div>
+    <div><dt>접속 시간</dt><dd>저녁 ~ 새벽</dd></div>
+    <div><dt>주맵</dt><dd>이벤트, 동트, 하코<small>테런 80 • 타겜 20</small></dd></div>
+    <div><dt>소통</dt><dd>디코 필참, 마이크 필수<small>TTS 있어요</small></dd></div>
+  </dl><span class="cn r"><b>숙제 안 해온 사람</b> : 미야옹</span></div>
+</div></section>
+
+<section id="join"><div class="wrap">
+  <h2>이런 분을 찾아요</h2>
+  <div class="board">
+    <div class="rules">
+      <div class="box good"><h3>이런 분은 좋아요</h3>
+        <ul><li>디코 지박령 <svg class="dd"><use href="#ghost"/></svg></li><li>직장인, 백수, 대학생</li><li>점령전 좋아하는 분 <svg class="dd"><use href="#heart"/></svg></li><li>타겜보다 테런을 더 좋아하는 분</li></ul></div>
+      <div class="box bad"><h3>이런 분은 싫어요</h3>
+        <ul><li>여·남미새</li><li>선 넘는 장난 하시는 분</li><li>분위기 망치시는 분</li><li>철새 <svg class="dd"><use href="#bird"/></svg></li><li>친해지려는 의지가 보이지 않으신 분</li></ul></div>
+    </div>
+    <div class="must"><b>가입 조건</b>
+      <ul>
+        <li>나이: 06년생 이상</li>
+        <li>성별: 남녀 무관 (남성은 군필)</li>
+        <li>디스코드 참여 필수, 마이크 필수 (TTS 있음)</li>
+        <li>주간 길드 퀘스트 2회 참여 필수</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="roll"><div class="wrap">
+  <h2>우리 반 친구들 <svg class="dd" style="--f:#ffb6d3"><use href="#cat"/></svg></h2>
+  <p class="lead">오늘도 출석 체크! 활동 중인 길드원을 소개해요.</p>
+  <div class="book">
+    <h3>부활동 출석부</h3>
+    <div class="meta"><span>2026학년도</span><span>담당: 서기 경각</span></div>
+    <div class="grid" id="stu"></div>
+  </div>
+</div></section>
+
+<section id="apply"><div class="wrap">
+  <h2>가입 신청서</h2>
+  <div class="board has-cn"><div class="form">
+    <div class="row2">
+      <label class="f">테런 닉네임<input type="text" id="nick" autocomplete="off"></label>
+      <label class="f">나이 / 성별<input type="text" id="as" placeholder="예: 03년생 / 여" autocomplete="off"></label>
+    </div>
+    <label class="f">주맵<input type="text" id="map" placeholder="예: 이벤트, 동트, 하코"></label>
+    <label class="f">접률 <small>일주일에 테런에 얼마나 들어오시나요?</small><input type="text" id="rate" placeholder="예: 주 5일, 하루 3시간"></label>
+    <label class="f">접속 시간대<input type="text" id="time" placeholder="예: 평일 밤 10시 이후"></label>
+    <label class="f">낯가림 정도
+      <select id="shy"><option>전혀 없어요</option><option>조금 있어요</option><option>보통이에요</option><option>많이 있어요</option></select></label>
+    <label class="f">궁금한 점<textarea id="ask" placeholder="길드에 대해 궁금한 점을 편하게 적어 주세요."></textarea></label>
+    <button class="btn" id="make" type="button">신청 문구 만들기</button>
+    <div id="out">
+      <textarea id="result" readonly></textarea>
+      <button class="btn" id="copy" type="button">복사하기</button>
+      <p id="msg" role="status"></p>
+    </div>
+  </div><span class="cn r"><b>오늘의 급식</b> : 카레라이스, 김치, 계란국, 샐러드·키위드레싱, 초코 아이스크림</span></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="board" style="text-align:center">
+  <h3>가입 문의</h3>
+  <p style="margin:0 0 16px">가입 문의는 오픈채팅 또는 인게임 ‘미야옹미아옹’으로 연락 주세요.</p>
+  <a class="btn" href="https://open.kakao.com/o/gjKaz5Ti" target="_blank" rel="noopener noreferrer">오픈채팅 들어가기</a>
+</div></div></section>
+</main>
+
+<!-- 이미지 확대 모달창 -->
+<div id="imgModal">
+  <button class="modal-close" id="closeModal" aria-label="닫기">&times;</button>
+  <img id="modalImg" src="" alt="확대된 활동 사진">
+</div>
+
+<div style="height:32px"></div>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  
+  /* 반장: 쁘까 / 부반장: 한촌, 미야옹미아옹 지정 및 8명 배치 */
+  var NAMES=['쁘까','한촌','미야옹미아옹','경각','송세민','후블','ozrz','리트머스'];
+  
+  /* 닉네임별 한 줄 평 매핑 */
+  var COMMENT_MAP={
+    '쁘까': '은하계의 귀염둥이 아이돌',
+    '한촌': '글래머 여친구함',
+    '미야옹미아옹': '루왁 커피머신',
+    'ozrz': '히든러프 내 노예❤️',
+    '경각': '히든러프 환영',
+    '후블': '같이 우끼끼 하실 분',
+    '리트머스' : '패션왕',
+    '송세민' : '내 빌리 할 사람'
+  };
+
+  var permanentLocked = [];
+  var hiddenNickNames = [];
+
+  var h='',i;
+  
+  // 1. 출석부 목록 생성 (0번째: 반장, 1~2번째: 부반장, 나머지: 길드원)
+  for(i=0;i<NAMES.length;i++){
+    var r=i<1?0:(i<3?1:2), rl=i<1?'반장':(i<3?'부반장':'길드원 ('+(i<4?'3학년':'2학년')+')'), n=NAMES[i];
+    var line = COMMENT_MAP[n] || ''; 
+    var isPermLocked = permanentLocked.includes(n);
+    var isHiddenNick = hiddenNickNames.includes(n);
+    
+    var imgTag;
+    var displayName;
+    var displayLine;
+    var slotClass;
+
+    if (isPermLocked) {
+      imgTag = '<span style="font-size:1.8rem;">🔒</span>';
+      displayName = '???';
+      displayLine = '🔒 비밀';
+      slotClass = 'slot p permanent-locked';
+    } else {
+      imgTag = '<img src="부활동 증사/' + n + '.png" alt="' + n + ' 증명사진">';
+      displayLine = line;
+      slotClass = 'slot p';
+      
+      if (isHiddenNick) {
+        displayName = '???';
+      } else {
+        displayName = n;
+      }
+    }
+    
+    h+='<div class="stu"><span class="no">'+(i+1)+'</span><span class="stamp">출</span>'+
+       '<div class="'+slotClass+'">' + imgTag + '</div>'+
+       '<div class="nm">'+displayName+'</div><span class="chip r'+r+'">'+rl+'</span><div class="say">'+displayLine+'</div></div>';
+  }
+  $('stu').innerHTML=h;
+  
+  // 2. 활동 사진 앨범 (부활동 단사1.png ~ 부활동 단사6.png)
+  h='';
+  for(i=1;i<=6;i++){
+    var imgSrc = '부활동 단사/부활동 단사' + i + '.png';
+    var albumImgTag = '<img src="' + imgSrc + '" alt="부활동 단체사진 ' + i + '">';
+    h+='<div class="pola"><div class="slot g" onclick="openModal(\'' + imgSrc + '\')">' + albumImgTag + '</div></div>';
+  }
+  $('alb').innerHTML=h;
+
+  /* 이미지 모달 팝업 제어 함수 전역 등록 */
+  window.openModal = function(src) {
+    $('modalImg').src = src;
+    $('imgModal').classList.add('show');
+  };
+
+  function closeModal() {
+    $('imgModal').classList.remove('show');
+  }
+
+  $('closeModal').addEventListener('click', closeModal);
+  
+  // 배경을 클릭해도 닫히도록 설정
+  $('imgModal').addEventListener('click', function(e) {
+    if(e.target === this) {
+      closeModal();
+    }
+  });
+
+  /* 삐뚤빼뚤 글씨: 글자마다 살짝 기울이고 위아래로 흔들기 */
+  var seed=3;
+  function rnd(){seed++;var s=Math.sin(seed*12.9898)*43758.5453;return s-Math.floor(s)}
+  function wob(el,a){
+    Array.prototype.slice.call(el.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        var tx=n.nodeValue;
+        if(!tx.trim())return;
+        var frag=document.createDocumentFragment();
+        var sr=document.createElement('span');sr.className='sr';sr.textContent=tx;
+        var vis=document.createElement('span');vis.setAttribute('aria-hidden','true');
+        tx.split(/(\s+)/).forEach(function(w){
+          if(!w)return;
+          if(/^\s+$/.test(w)){vis.appendChild(document.createTextNode(' '));return;}
+          var ws=document.createElement('span');ws.className='w';
+          Array.from(w).forEach(function(c){
+            var s=document.createElement('span');s.className='ch';s.textContent=c;
+            s.style.transform='translateY('+((rnd()-.5)*3.2*a).toFixed(1)+'px) rotate('+((rnd()-.5)*8*a).toFixed(1)+'deg)';
+            ws.appendChild(s);
+          });
+          vis.appendChild(ws);
+        });
+        frag.appendChild(sr);frag.appendChild(vis);
+        el.replaceChild(frag,n);
+      }else if(n.nodeType===1&&!/^(svg|INPUT|TEXTAREA|SELECT|BUTTON|SCRIPT|STYLE|LABEL)$/i.test(n.tagName)&&!n.classList.contains('sr')){
+        wob(n,a);
+      }
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.cn'),function(e){wob(e,1.4)});
+
+  $('make').addEventListener('click',function(){
+    var nick=$('nick').value.trim();
+    if(!nick){$('nick').focus();$('nick').placeholder='닉네임을 입력해 주세요';return;}
+    var v=function(id){return $(id).value.trim()||'미입력'};
+    var t=[
+      '안녕하세요, 부활동 가입 신청합니다.',
+      '테런 닉네임: '+nick,
+      '나이 / 성별: '+v('as'),
+      '주맵: '+v('map'),
+      '접률: '+v('rate'),
+      '접속 시간대: '+v('time'),
+      '낯가림 정도: '+$('shy').value,
+      '궁금한 점: '+($('ask').value.trim()||'없어요')
+    ].join('\n');
+    $('result').value=t;
+    $('out').className='show';
+    $('msg').textContent='';
+  });
+  $('copy').addEventListener('click',function(){
+    var r=$('result');
+    function ok(){$('msg').textContent='복사했어요. 부반장에게 보내 주세요.';}
+    function fail(){r.select();$('msg').textContent='자동 복사가 안 돼요. 선택된 문구를 직접 복사해 주세요.';}
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(r.value).then(ok,fail);}
+      else{r.select();document.execCommand('copy')?ok():fail();}
+    }catch(e){fail();}
+  });
+})();  
+</script>
+</body>
+</html>  
